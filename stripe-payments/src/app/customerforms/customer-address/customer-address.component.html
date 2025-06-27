@@ -1,0 +1,18 @@
+<mat-card class="card-container" appearance="raised">
+<form [formGroup]="customerAddress" (ngSubmit)="onSubmit()" class="container">
+<h1>Enter Your Address</h1>
+<mat-form-field>
+  <mat-label>Indian Address</mat-label>
+  <input matInput type="text" formControlName="indianStAddress" placeholder="Street Address">
+  <input matInput type="text" formControlName="indianCity" placeholder="City">
+  <input matInput type="text" formControlName="indianState" placeholder="State">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>US Address</mat-label>
+  <input matInput type="text" formControlName="usStAddress" placeholder="Street Address">
+  <input matInput type="text" formControlName="usCity" placeholder="City">
+  <input matInput type="text" formControlName="usState" placeholder="State">
+</mat-form-field>
+ <button matButton (click)="next()">Next</button>
+</form>
+</mat-card>

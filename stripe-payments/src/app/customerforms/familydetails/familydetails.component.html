@@ -1,0 +1,30 @@
+<mat-card class="card-container" appearance="raised">
+<form [formGroup]="familyDetails" (ngSubmit)="onSubmit()" class="container">
+<h1>Enter Your Family Details</h1>
+<mat-form-field>
+  <mat-label>Fathers First Name</mat-label>
+  <input matInput type="text" formControlName="fathersFirstName">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Fathers Last Name</mat-label>
+  <input matInput type="text" formControlName="fathersLastName">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Fathers Phone Number</mat-label>
+ <input matInput matInput type="text" formControlName="fathersPhoneNumber">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Mothers First Name</mat-label>
+  <input matInput type="text" formControlName="mothersFirstName">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Mothers Last Name</mat-label>
+  <input matInput type="text" formControlName="mothersLastName">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Mothers Phone Number</mat-label>
+ <input matInput matInput type="text" formControlName="mothersPhoneNumber">
+</mat-form-field>
+ <button matButton (click)="next()">Next</button>
+</form>
+</mat-card>

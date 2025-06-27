@@ -1,0 +1,10 @@
+<mat-card class="card-container" appearance="raised">
+<div class="container">
+<div *ngIf="!showConfirmation">
+    <button matButton="elevated" (click)="confirm()">Click to Confirm and Download</button>
+</div>
+<div *ngIf="showConfirmation">
+        <mat-icon>done_outline</mat-icon>
+</div>
+</div>
+</mat-card>
