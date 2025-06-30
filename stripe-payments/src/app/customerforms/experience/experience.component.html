@@ -1,0 +1,20 @@
+<mat-card class="card-container" appearance="raised">
+    <h1 class="header">Enter Experience</h1>
+    <form [formGroup]="addExperience" (ngSubmit)="onSubmit()" class="container">
+        <mat-form-field>
+            <mat-label>Enter Experience</mat-label>
+            <input matInput type="text" formControlName="addCompany" placeholder="Add Company Name">
+            <input matInput type="text" formControlName="addDescription" placeholder="Add Description">
+        </mat-form-field>
+        <button matButton (click)="add()">Add</button>
+    </form>
+    <div *ngIf="experienceList.length>0">
+        <h1>Experiences</h1>
+        <div *ngFor="let e of experienceList">
+            <mat-card>
+                <h1>{{e.addCompany}}</h1>
+                <p>{{e.addDescription}}</p>
+            </mat-card>
+        </div>
+    </div>
+     <button matButton class="nextStep" (click)="done()">Go To Next Step</button>

@@ -1,8 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.container{
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
     margin: 100px;
     margin-left: 10rem;
     margin-right: 10rem;
@@ -10,6 +18,52 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.card-container{
-    margin: 1em;
+
+.card-container {
+    background: #beb9b9 !important;
+    margin: 2em;
+}
+
+.success {
+    color: green;
+    font-size: 27px;
+}
+
+.confirm-card {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: cursive;
+    color: navy;
+    letter-spacing: normal;
+    padding: 40px;
+    margin: 5em !important;
+}
+
+.nextStep {
+    background-color: rgb(140, 185, 241) !important;
+    border: 1px solid rgb(78, 78, 227);
+    border-radius: 10px;
+    color: white;
+}
+
+.confirm {
+    background-color: rgb(123, 226, 123) !important;
+    border: 1px solid green;
+    border-radius: 7px;
+    color: white;
+}
+
+.header {
+    margin: 20px !important;
+    color: white;
+    text-align: center;
+    font-weight: bolder !important;
+
+    .header-confirm{
+        margin: 20px !important;
+        color: black;
+        text-align: center;
+        font-weight: bolder !important;
+    }
 }

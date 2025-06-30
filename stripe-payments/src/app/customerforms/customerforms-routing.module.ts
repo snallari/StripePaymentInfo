@@ -5,10 +5,12 @@ import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { CustomerAddressComponent } from './customer-address/customer-address.component';
 import { FamilydetailsComponent } from './familydetails/familydetails.component';
 import { ConfirmationComponentComponent } from './confirmation-component/confirmation-component.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
-  { path: '', component: CustomerformsComponent},
+  { path: 'self', component: CustomerformsComponent},
   {path: 'address', component: CustomerAddressComponent},
+  { path: 'experience', component: ExperienceComponent},
   {path: 'familyDetails', component: FamilydetailsComponent},
   {path:'confirmation', component:ConfirmationComponentComponent}
 ];

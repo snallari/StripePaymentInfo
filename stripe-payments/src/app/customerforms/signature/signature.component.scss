@@ -1,0 +1,14 @@
+.signature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas {
+  border: 2px solid #888;
+  border-radius: 4px;
+  background: #fff;
+  cursor: crosshair;
+}
+.signature-actions {
+  margin-top: 10px;
+}

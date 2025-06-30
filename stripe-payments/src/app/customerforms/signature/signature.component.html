@@ -1,0 +1,8 @@
+<div class="signature-container">
+  <canvas #canvas width="300" height="120"
+    (mousedown)="startDrawing($event)" (mousemove)="draw($event)" (mouseup)="stopDrawing()" (mouseleave)="stopDrawing()"
+    (touchstart)="startDrawing($event)" (touchmove)="draw($event)" (touchend)="stopDrawing()"></canvas>
+  <div class="signature-actions">
+    <button matButton="elevated" class="nextStep" (click)="clear()">Clear</button>
+  </div>
+</div>

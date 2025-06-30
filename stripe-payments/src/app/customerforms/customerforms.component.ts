@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CustomerserviceService } from './customerservice.service';
 
 @Component({
   selector: 'app-customerforms',
@@ -14,19 +15,22 @@ export class CustomerformsComponent implements OnInit {
     phoneNumber: new FormControl("")
   })
 
-  constructor(protected router: Router) {
+  constructor(protected router: Router, private customerService: CustomerserviceService) {
 
   }
 
   ngOnInit(): void {
-
+    this.customerService.getFormData().subscribe((data) => {
+      console.log("updates", data)
+    })
   }
 
   onSubmit() {
-    console.log("customerform", this.customerForm)
   }
 
   next() {
+    this.customerService.changeFormData({ customer: this.customerForm.value });
+    console.log("log", this.customerService.customerForm.customer)
     this.router.navigate(['/customer/address'])
   }
 

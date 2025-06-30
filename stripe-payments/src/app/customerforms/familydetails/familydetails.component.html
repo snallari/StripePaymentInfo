@@ -1,6 +1,6 @@
 <mat-card class="card-container" appearance="raised">
 <form [formGroup]="familyDetails" (ngSubmit)="onSubmit()" class="container">
-<h1>Enter Your Family Details</h1>
+<h1 class="header">Enter Your Family Details</h1>
 <mat-form-field>
   <mat-label>Fathers First Name</mat-label>
   <input matInput type="text" formControlName="fathersFirstName">
@@ -25,6 +25,6 @@
   <mat-label>Mothers Phone Number</mat-label>
  <input matInput matInput type="text" formControlName="mothersPhoneNumber">
 </mat-form-field>
- <button matButton (click)="next()">Next</button>
+ <button matButton class="nextStep" (click)="next()">Next</button>
 </form>
 </mat-card>
